@@ -1,8 +1,7 @@
 mission:
   rooms_order:
-    - CORRIDOR
-    - GUESTROOM
-    - DININGROOM
+    - BEDROOM
+    - LIVINGROOM
 
 
 rooms:
