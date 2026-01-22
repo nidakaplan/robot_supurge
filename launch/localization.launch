@@ -1,0 +1,23 @@
+<launch>
+
+  <rosparam file="$(find robot_supurge)/config/mission.yaml" command="load"/>
+
+  <!-- Gazebo model path -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="$(find robot_supurge)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <!-- Gazebo -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name"
+         value="$(find robot_supurge)/world/house.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+  
+  <include file="$(find turtlebot3_navigation)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="$(find robot_supurge)/map/map_yedek.yaml"/>
+  </include>
+
+    
+</launch>
+

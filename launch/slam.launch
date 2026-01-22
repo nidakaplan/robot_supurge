@@ -1,0 +1,28 @@
+<launch>
+
+  <arg name="slam_methods" default="gmapping"/>
+
+  <!-- Gazebo model path -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="$(find robot_supurge)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <!-- Gazebo -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name"
+         value="$(find robot_supurge)/world/house.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+  </include>
+
+  <!-- Slam -->
+  <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
+    <arg name="slam_methods" value="$(arg slam_methods)"/>
+  </include>
+
+  <!-- Slam node -->
+  <node pkg="robot_supurge"
+    type="slam.py"
+    name="slam"/>
+
+</launch>
+

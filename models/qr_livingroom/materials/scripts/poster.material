@@ -1,0 +1,14 @@
+material QR/Livingroom
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/livingroom.png
+        filtering trilinear
+      }
+    }
+  }
+}

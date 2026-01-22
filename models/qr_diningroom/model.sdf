@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="qr_diningroom">
+    <static>true</static>
+
+    <link name="link">
+      <visual name="visual">
+        <pose>0 0 0.1 1.5708 1.5708 3.1416</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.2 0.2</size>
+          </plane>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://qr_diningroom/materials/scripts</uri>
+            <uri>model://qr_diningroom/materials/textures</uri> <name>QR/DiningRoom</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+  </model>
+</sdf>
+
+
+

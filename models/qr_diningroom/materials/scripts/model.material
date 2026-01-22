@@ -1,0 +1,14 @@
+material QR/DiningRoom
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/diningroom.png
+        filtering trilinear
+      }
+    }
+  }
+}

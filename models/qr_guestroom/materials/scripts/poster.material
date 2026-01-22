@@ -1,0 +1,14 @@
+material QR/Guestroom
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/guestroom.png
+        filtering trilinear
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="qr_kitchen">
+    <static>true</static>
+
+    <link name="link">
+      <visual name="visual">
+        <pose>0 0 0.1 0 1.5708 3.1416</pose>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.2 0.2</size>
+          </plane>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://qr_kitchen/materials/scripts</uri>
+            <uri>model://qr_kitchen/materials/textures</uri> <name>QR/Kitchen</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+  </model>
+</sdf>
+
