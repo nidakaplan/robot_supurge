@@ -184,6 +184,7 @@ class TaskManager:
         from geometry_msgs.msg import Twist
         import math
 
+
         timeout_sec = 60  # odada dolaşma süresi
         DESIRED_LEFT = 0.3
         DESIRED_FRONT = 0.7
