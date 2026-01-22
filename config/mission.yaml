@@ -1,7 +1,7 @@
 mission:
   rooms_order:
-    - BEDROOM
-    - LIVINGROOM
+    - KITCHEN
+    - GUESTROOM
 
 
 rooms:

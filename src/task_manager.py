@@ -184,7 +184,7 @@ class TaskManager:
         from geometry_msgs.msg import Twist
         import math
 
-        timeout_sec = 30  # odada dolaşma süresi
+        timeout_sec = 60  # odada dolaşma süresi
         DESIRED_LEFT = 0.3
         DESIRED_FRONT = 0.7
         FRONT_LIMIT = 0.4
@@ -235,7 +235,7 @@ class TaskManager:
             error = DESIRED_LEFT - left
             derivative = error - prev_error
             steering = Kp*error + Kd*derivative
-            steering = max(min(steering, 0.6), -0.6)
+            steering = max(min(steering, 0.8), -0.8)
             prev_error = error
 
             
