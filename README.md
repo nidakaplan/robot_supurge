@@ -23,7 +23,7 @@ Ubuntu 20.04 üzerinde ROS Noetic kurulu olmalıdır.
 
 ### Workspace Hazırlığı
 
-Repo'yu aşağıdaki kodları kullanarak workspace'inize ekleyin.
+Repo'yu aşağıdaki komutları kullanarak workspace'inize ekleyin.
 
 ```bash
 cd ~/catkin_ws/src
