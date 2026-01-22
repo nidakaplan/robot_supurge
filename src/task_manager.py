@@ -235,7 +235,7 @@ class TaskManager:
             error = DESIRED_LEFT - left
             derivative = error - prev_error
             steering = Kp*error + Kd*derivative
-            steering = max(min(steering, 0.6), -0.6)
+            steering = max(min(steering, 0.8), -0.8)
             prev_error = error
 
             
