@@ -78,17 +78,8 @@ Ardından yeni bir terminalde aşağıdaki komutu çalıştırarak **mission.yam
 rosrun robot_supurge task_manager.py
 ```
 
-### 4️⃣ Robot Süpürge Davranışı
-
-```bash
-rosrun robot_supurge robot_supurge.py
-```
-
 ---
 
 ## NOT
 Robot temizlik rotasını doğru bir şekilde gerçekleştirememektedir.
 
-## 📌 Notlar
-
-Bu proje bir **üniversite dersi final ödevi** kapsamında geliştirilmiştir.
