@@ -27,6 +27,8 @@ Repo'yu aşağıdaki kodları kullanarak workspace'inize ekleyin.
 
 ```bash
 cd ~/catkin_ws/src
+git clone https://github.com/nidakaplan/robot_supurge.git
+cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
 ```
