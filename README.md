@@ -53,7 +53,15 @@ $ rosrun map_server map_saver -f ~/catkin_ws/src/robot_supurge/map/map
 ```
 
 ## Önemli not: 
-* Eğer kaydettiğiniz haritayı kullanmak istiyorsanız **catkin_ws/src/launch/localization.launch** dosyasındaki <arg name="map_file" value="$(find robot_supurge)/map/map_yedek.yaml"/> satırını <arg name="map_file" value="$(find robot_supurge)/map/map.yaml"/> ile değiştirin.
+* Eğer kaydettiğiniz haritayı kullanmak istiyorsanız **catkin_ws/src/launch/localization.launch** dosyasındaki
+```xml
+<arg name="map_file" value="$(find robot_supurge)/map/map_yedek.yaml"/>
+```
+satırını 
+```xml
+<arg name="map_file" value="$(find robot_supurge)/map/map.yaml"/>
+```
+ile değiştirin.
 
 ### Temizlik Rotasının Oluşturulması
 
