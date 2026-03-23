@@ -80,6 +80,3 @@ rosrun robot_supurge task_manager.py
 
 ---
 
-## NOT
-Robot temizlik rotasını doğru bir şekilde gerçekleştirememektedir.
-
